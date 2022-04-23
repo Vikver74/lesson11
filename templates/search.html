@@ -1,0 +1,4 @@
+<h1>найдено кандидатов {{ candidates_quantity }}</h2>
+{% for item in candidates%}
+<p><a href="/candidate/{{ item.id }}">{{ item.name }}  {{ item.age }}</a></p>
+{% endfor%}
